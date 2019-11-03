@@ -28,7 +28,10 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-contentful',
-      options: contentfulConfig,
+      options: {
+        ...contentfulConfig,
+        host: 'moo.contentful.com'
+      },
     }
   ],
 }
