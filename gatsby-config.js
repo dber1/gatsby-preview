@@ -29,8 +29,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        ...contentfulConfig,
-        host: 'moo.contentful.com'
+        ...contentfulConfig
       },
     }
   ],
